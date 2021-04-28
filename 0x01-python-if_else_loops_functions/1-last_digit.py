@@ -12,4 +12,3 @@ elif lastNumber > 5:
 else:
     retorna = "and is less than 6 and not 0"
 print("Last digit of {:d} is {:d} {}".format(number, lastNumber, retorna))
-
