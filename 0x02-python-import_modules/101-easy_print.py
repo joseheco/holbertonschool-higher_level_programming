@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-__import__("os").write(1, bytes("#\npythoniscool", "UTF-8"))
+__import__("os").write(1, bytes("#pythoniscool\n"))
