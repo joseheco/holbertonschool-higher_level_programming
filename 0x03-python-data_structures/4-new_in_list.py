@@ -2,8 +2,9 @@
 
 
 def mew_in_list(my_list, idx, element):
-    copy = []
-    copy = my_list[:]
-    if idx >= 0 and idx < len(my_list):
-        copy[idx] = element
-    return copy
+    new_list = my_list.copy()
+    if idx < 0 or idx >= len(my_list):
+        return(new_list)
+    else:
+        new_list[idx] = element
+        return(new_list)
