@@ -1,4 +1,5 @@
 #!/usr/bin/python3
 
-def search_replace(my_list, search, replace):
-    return [i if i != search else replace for i in my_list]
+
+def square_matrix_simple(matrix=[]):
+    return[[i**2 for i in x] for x in matrix]
