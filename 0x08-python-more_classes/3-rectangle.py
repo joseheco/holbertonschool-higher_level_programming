@@ -56,5 +56,3 @@ class Rectangle:
         """Empty string"""
         if self.__width == 0 or self.__height == 0:
             string = ""
-        else:
-
