@@ -54,11 +54,18 @@ class Rectangle:
 
     def __str__(self):
         """Empty string"""
+        string = ""
         if self.__width == 0 or self.__height == 0:
-            string = ""
+            return string
         else:
-            string = ("#" * self.__width + \n) * self.__height
-            
+            for a in range(self.height):
+                for b in range(self.width):
+                    string += "#"
+                if (a != (self.height - 1)):
+                    string += "\n"
+        return string
+
+    
     def __repr__(self):
         """Return a string"""
         return f"Rectangle({self.__width}, {self.__height})"
