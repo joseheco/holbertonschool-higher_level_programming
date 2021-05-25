@@ -60,6 +60,6 @@ class Rectangle:
             for a in range(self.height):
                 for b in range(self.width):
                     string += "#"
-                if (a != (self.height -1)):
+                if (a != (self.height - 1)):
                     string += "\n"
         return string
