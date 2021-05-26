@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-'''Class LockedClass'''
+"""Class LockedClass"""
 
 
 class LockedClass:
-    '''Class Locked'''
-    __lc__ = "first_name"
+    """Class Locked"""
+    __libre__ = "first_name"
