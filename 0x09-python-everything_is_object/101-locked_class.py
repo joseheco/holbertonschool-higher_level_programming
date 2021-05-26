@@ -5,4 +5,3 @@
 class LockedClass:
     '''Class Locked'''
     __lc__ = "first_name"
-
