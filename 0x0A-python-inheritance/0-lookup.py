@@ -2,6 +2,6 @@
 '''Lookup'''
 
 
-def Lookup(obj):
+def lookup(obj):
     '''Function return list attributes and methods of an object'''
     return dir(obj)
