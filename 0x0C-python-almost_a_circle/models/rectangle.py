@@ -85,15 +85,15 @@ class Rectangle(Base):
 
     def uodate(self, *args):
         '''args Attributes'''
-        if len(args):
-            for i, ar in enumerate(args):
+        if args and len(args):
+            for i, a in enumerate(args):
                 if i == 0:
-                    self.id = ar
+                    self.id = a
                 elif i == 1:
-                    self.width = ar
+                    self.width = a
                 elif i == 2:
-                    self.height = ar
+                    self.height = a
                 elif i == 3:
-                    self.x = ar
+                    self.x = a
                 elif i == 4:
-                    self.y = ar
+                    self.y = a
