@@ -55,7 +55,7 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
-        '''x'''
+        '''x.'''
         if type(value) is not int:
             raise TypeError("x must be an integer")
         if value < 0:
@@ -64,7 +64,7 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
-        '''y'''
+        '''y.'''
         if type(value) is not int:
             raise TypeError("y must be an integer")
         if value < 0:
