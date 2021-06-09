@@ -84,7 +84,7 @@ class Rectangle(Base):
                                                        self.__height)
 
     def uodate(self, *args):
-        '''*args Attributes'''
+        '''args Attributes'''
         if len(args):
             for i, ar in enumerate(args):
                 if i == 0:
