@@ -109,4 +109,3 @@ class Rectangle(Base):
                 self.x = kwargs["x"]
             elif "y" in kwargs:
                 self.y = kwargs["y"]
-
