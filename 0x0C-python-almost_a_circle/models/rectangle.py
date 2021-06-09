@@ -83,7 +83,7 @@ class Rectangle(Base):
                                                        self.__width,
                                                        self.__height)
 
-    def uodate(self, *args):
+    def update(self, *args):
         '''args Attributes'''
         if args and len(args):
             for i, a in enumerate(args):
