@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 '''First Rectangle'''
+
+
 from models.base import Base
 
 
@@ -68,3 +70,52 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
+    
+    def area(self):
+        '''return area'''
+        return(self.__width * self.__height)
+
+    def __str__(self):
+        '''str_self'''
+        return "[Rectangle] ({}) {}/{}".format(self.id,
+                                               self.__x,
+                                               self.__y,
+                                               self.__width,
+                                               self.__height)
+
+    def update(self, *arg, **kwargs):
+        '''args Attributes'''
+        if args and len(args):
+            for i, a in enumerate(args):
+                if i == 0:
+                    self.id = a
+                elif i == 1:
+                    self.width = a
+                elif i == 2:
+                    self.height = a
+                elif i == 3:
+                    self.x = a
+                elif i == 4:
+                    self.y = a
+
+        else:
+            if "id" in kwargs:
+                self.id = kwargs["id"]
+            if "width" in kwargs:
+                self.width = kwargs["width"]
+            if "height" in kwargs:
+                self.height = kwargs["height"]
+            if "x" in kwargs:
+                self.x = kwargs["x"]
+            if "y" in kwargs:
+                 self.y = kwargs["y"]
+
+    def to_dictionary(self):
+        """dictionary of a Rectangle"""
+        dicti = {}
+        dicti["id"] = self.id
+        dicti["width"] = self.width
+        dicti["height"] = self.height
+        dicti["x"] = self.x
+        dicti["y"] = self.y
+        return dicti
