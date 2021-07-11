@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 '''First Rectangle'''
-
-
 from models.base import Base
 
 
