@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """script prints the State object with the name
 passed as argument from the database hbtn_0e_6_usa"""
-from model_state import Base, State
+from model_state  import Base, State
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 import sys
@@ -12,9 +12,8 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    state_id = session.query(State.id).filter(
-        State.name == sys.argv[4]).first()
-    if state_id is None:
-        print("Not found")
-    else:
-        print("{:d}".format(state_id.id))
+    new_state = State(name="Louisiana")
+    session.add(new_state)
+    session.commit()
+
+    print(new_state.id)
