@@ -9,7 +9,7 @@ request(process.argv[2], { json: true }, function (error, response, body) {
     let count = 0;
     for (let result of body.results) {
       for (let character of result.characters) {
-        if (character.endsWith('18')) {
+        if (character.endsWith('18/')) {
           count++;
         }
       }
